@@ -89,7 +89,6 @@ main {
 
     main {
         transform: scale(1);
-        padding-top: 0;
     }
 
     .portfolio-item {
