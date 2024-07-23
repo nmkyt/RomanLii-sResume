@@ -41,9 +41,12 @@ button:hover {
 }
 
 main {
+    padding: 150px;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    transform: scale(1.15);
+    transform-origin: center;
 }
 
 .portfolio {
@@ -58,6 +61,12 @@ main {
 }
 
 .portfolio-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.portfolio-item video {
     width: 100%;
     height: auto;
     display: block;
