@@ -14,8 +14,6 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    transform: scale(1.15);
-    transform-origin: center;
 }
 
 h1 {
@@ -76,4 +74,24 @@ main {
 
 .hidden {
     display: none;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+
+    main {
+        padding: 10px;
+        transform: scale(1);
+    }
+
+    .portfolio-item {
+        margin-bottom: 10px;
+    }
 }
