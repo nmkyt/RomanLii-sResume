@@ -106,6 +106,18 @@ main {
         transform: scale(1);
     }
 
+    .portfolio {
+        padding-top: 0;
+    }
+
+    .portfolio-page1 {
+        padding-top: 0;
+    }
+
+    .portfolio-page2 {
+        padding-top: 0;
+    }
+
     .portfolio-item {
         margin-bottom: 10px;
     }
