@@ -91,7 +91,7 @@ main {
     display: none;
 }
 
-@media only screen and (min-device-width: 50px) and (max-device-width: 1000px) {
+@media only screen and (min-device-width: 50px) and (max-device-width: 1300px) {
     h1 {
         font-size: 1.5em;
     }
@@ -106,15 +106,15 @@ main {
     }
 
     .portfolio {
-        padding-top: 0;
+        padding-top: 1px;
     }
 
     .portfolio-page1 {
-        padding-top: 0;
+        padding-top: 1px;
     }
 
     .portfolio-page2 {
-        padding-top: 0;
+        padding-top: 1px;
     }
 
     .portfolio-item {
