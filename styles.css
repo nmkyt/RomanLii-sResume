@@ -102,6 +102,7 @@ main {
     }
 
     main {
+        padding-top: 0;
         transform: scale(1);
     }
 
