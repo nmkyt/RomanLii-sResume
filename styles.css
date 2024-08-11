@@ -106,16 +106,9 @@ main {
     }
 
     .portfolio {
-        padding-top: 1px;
+        padding-top: 0;
     }
 
-    .portfolio-page1 {
-        padding-top: 1px;
-    }
-
-    .portfolio-page2 {
-        padding-top: 1px;
-    }
 
     .portfolio-item {
         margin-bottom: 10px;
