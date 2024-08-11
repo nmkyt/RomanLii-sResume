@@ -106,15 +106,15 @@ main {
     }
 
     .portfolio {
-        padding-top: 450px;
+        padding-top: 0;
     }
 
     .portfolio-page1 {
-        padding-top: 1260px;
+        padding-top: 0;
     }
 
     .portfolio-page2 {
-        padding-top: 1260px;
+        padding-top: 0;
     }
 
     .portfolio-item {
