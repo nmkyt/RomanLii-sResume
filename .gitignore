@@ -1,0 +1,19 @@
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs и временные файлы
+*.log
+*.tmp
+*.swp
+*~
+
+# Node (на случай, если появится сборка)
+node_modules/
+dist/
