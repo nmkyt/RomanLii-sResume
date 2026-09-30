@@ -9,7 +9,6 @@
 
     --content-width: 1200px;
     --gutter: 24px;
-    --gap: 16px;
     --radius: 8px;
 }
 
@@ -110,10 +109,14 @@ body {
     padding: var(--gutter) var(--gutter) calc(var(--gutter) * 2);
 }
 
+/* Слайды идут сплошной лентой: без промежутков, скругляется только лента целиком */
 .gallery {
     display: flex;
     flex-direction: column;
-    gap: var(--gap);
+    border-radius: var(--radius);
+    overflow: hidden;
+    /* Ссылка вида #design не должна прятать начало раздела под шапку */
+    scroll-margin-top: 200px;
 }
 
 .gallery[hidden] {
@@ -125,7 +128,6 @@ body {
     display: block;
     width: 100%;
     height: auto;
-    border-radius: var(--radius);
     background: var(--surface);
 }
 
@@ -134,7 +136,6 @@ body {
 @media (max-width: 640px) {
     :root {
         --gutter: 12px;
-        --gap: 8px;
         --radius: 4px;
     }
 
