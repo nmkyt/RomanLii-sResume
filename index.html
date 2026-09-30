@@ -2,65 +2,63 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#111111">
+    <meta name="description" content="Портфолио Романа Лия: графический дизайн и иллюстрация.">
+    <title>Roman Lii — Portfolio</title>
+    <link rel="stylesheet" href="static/css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Roman Lii's Portfolio</h1>
-        <div class="button-group">
-            <button id="aboutButton">About me</button>
-            <button id="designButton">Design</button>
-            <button id="illustrationButton">Illustration</button>
+    <header class="site-header">
+        <div class="site-header__inner">
+            <h1 class="site-title">Roman Lii</h1>
+            <nav class="tabs" role="tablist" aria-label="Разделы портфолио">
+                <button class="tab" id="tab-about" role="tab" aria-controls="about" aria-selected="true">About me</button>
+                <button class="tab" id="tab-design" role="tab" aria-controls="design" aria-selected="false">Design</button>
+                <button class="tab" id="tab-illustration" role="tab" aria-controls="illustration" aria-selected="false">Illustration</button>
+            </nav>
         </div>
     </header>
-    <main>
-        <section id="aboutPortfolio" class="portfolio">
-            <div class="portfolio-item">
-                <img src="./aboutPortfolio/1.png" alt="image not found"/>
-                <img src="./aboutPortfolio/2.png" alt="image not found"/>
-                <img src="./aboutPortfolio/3.png" alt="image not found"/>
-            </div>
+    <main class="content">
+        <section id="about" class="gallery" role="tabpanel" aria-labelledby="tab-about">
+            <img src="static/portfolio/about/1.webp" width="2400" height="1350" decoding="async" alt="Обо мне, слайд 1">
+            <img src="static/portfolio/about/2.webp" width="2400" height="1350" loading="lazy" decoding="async" alt="Обо мне, слайд 2">
+            <img src="static/portfolio/about/3.webp" width="2400" height="1312" loading="lazy" decoding="async" alt="Обо мне, слайд 3">
         </section>
-        <section id="designPortfolio" class="portfolio-page1 hidden">
-            <div class="portfolio-item">
-                <img src="./designPortfolio/1.png" alt="image not found"/>
-                <img src="./designPortfolio/2.png" alt="image not found"/>
-                <img src="./designPortfolio/3.png" alt="image not found"/>
-                <img src="./designPortfolio/4.png" alt="image not found"/>
-                <video controls>
-                    <source src="./designPortfolio/ui.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <img src="./designPortfolio/5.png" alt="image not found"/>
-                <img src="./designPortfolio/6.png" alt="image not found"/>
-            </div>
+        <section id="design" class="gallery" role="tabpanel" aria-labelledby="tab-design" hidden>
+            <img src="static/portfolio/design/1.webp" width="1920" height="1080" loading="lazy" decoding="async" alt="Дизайн, слайд 1">
+            <img src="static/portfolio/design/2.webp" width="1920" height="3250" loading="lazy" decoding="async" alt="Дизайн, слайд 2">
+            <img src="static/portfolio/design/3.webp" width="1920" height="3748" loading="lazy" decoding="async" alt="Дизайн, слайд 3">
+            <img src="static/portfolio/design/4.webp" width="1920" height="3291" loading="lazy" decoding="async" alt="Дизайн, слайд 4">
+            <video controls playsinline preload="metadata" width="1920" height="1080">
+                <source src="static/portfolio/design/ui.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
+            <img src="static/portfolio/design/5.webp" width="1920" height="1700" loading="lazy" decoding="async" alt="Дизайн, слайд 5">
+            <img src="static/portfolio/design/6.webp" width="1920" height="2092" loading="lazy" decoding="async" alt="Дизайн, слайд 6">
         </section>
-        <section id="illustrationPortfolio" class="portfolio-page2 hidden">
-            <div class="portfolio-item">
-                <img src="./illustrationPortfolio/1.png" alt="image not found"/>
-                <img src="./illustrationPortfolio/2.png" alt="image not found"/>
-                <img src="./illustrationPortfolio/3.png" alt="image not found"/>
-                <img src="./illustrationPortfolio/4.png" alt="image not found"/>
-                <img src="./illustrationPortfolio/5.png" alt="image not found"/>
-                <img src="./illustrationPortfolio/6.png" alt="image not found"/>
-                <img src="./illustrationPortfolio/7.png" alt="image not found"/>
-                <img src="./illustrationPortfolio/8.png" alt="image not found"/>
-                <img src="./illustrationPortfolio/9.png" alt="image not found"/>
-                <img src="./illustrationPortfolio/10.png" alt="image not found"/>
-                <img src="./illustrationPortfolio/11.png" alt="image not found"/>
-                <img src="./illustrationPortfolio/12.png" alt="image not found"/>
-                <img src="./illustrationPortfolio/13.png" alt="image not found"/>
-                <img src="./illustrationPortfolio/14.png" alt="image not found"/>
-                <img src="./illustrationPortfolio/15.png" alt="image not found"/>
-                <img src="./illustrationPortfolio/16.png" alt="image not found"/>
-                <img src="./illustrationPortfolio/17.png" alt="image not found"/>
-                <img src="./illustrationPortfolio/18.png" alt="image not found"/>
-                <img src="./illustrationPortfolio/19.png" alt="image not found"/>
-            </div>
+        <section id="illustration" class="gallery" role="tabpanel" aria-labelledby="tab-illustration" hidden>
+            <img src="static/portfolio/illustration/1.webp" width="1920" height="1080" loading="lazy" decoding="async" alt="Иллюстрация, слайд 1">
+            <img src="static/portfolio/illustration/2.webp" width="1920" height="1501" loading="lazy" decoding="async" alt="Иллюстрация, слайд 2">
+            <img src="static/portfolio/illustration/3.webp" width="1920" height="786" loading="lazy" decoding="async" alt="Иллюстрация, слайд 3">
+            <img src="static/portfolio/illustration/4.webp" width="1920" height="888" loading="lazy" decoding="async" alt="Иллюстрация, слайд 4">
+            <img src="static/portfolio/illustration/5.webp" width="1920" height="1075" loading="lazy" decoding="async" alt="Иллюстрация, слайд 5">
+            <img src="static/portfolio/illustration/6.webp" width="1920" height="911" loading="lazy" decoding="async" alt="Иллюстрация, слайд 6">
+            <img src="static/portfolio/illustration/7.webp" width="1920" height="900" loading="lazy" decoding="async" alt="Иллюстрация, слайд 7">
+            <img src="static/portfolio/illustration/8.webp" width="1920" height="1840" loading="lazy" decoding="async" alt="Иллюстрация, слайд 8">
+            <img src="static/portfolio/illustration/9.webp" width="1920" height="1329" loading="lazy" decoding="async" alt="Иллюстрация, слайд 9">
+            <img src="static/portfolio/illustration/10.webp" width="1920" height="1400" loading="lazy" decoding="async" alt="Иллюстрация, слайд 10">
+            <img src="static/portfolio/illustration/11.webp" width="1920" height="724" loading="lazy" decoding="async" alt="Иллюстрация, слайд 11">
+            <img src="static/portfolio/illustration/12.webp" width="1920" height="1235" loading="lazy" decoding="async" alt="Иллюстрация, слайд 12">
+            <img src="static/portfolio/illustration/13.webp" width="1925" height="1809" loading="lazy" decoding="async" alt="Иллюстрация, слайд 13">
+            <img src="static/portfolio/illustration/14.webp" width="1920" height="1767" loading="lazy" decoding="async" alt="Иллюстрация, слайд 14">
+            <img src="static/portfolio/illustration/15.webp" width="1920" height="865" loading="lazy" decoding="async" alt="Иллюстрация, слайд 15">
+            <img src="static/portfolio/illustration/16.webp" width="1920" height="1903" loading="lazy" decoding="async" alt="Иллюстрация, слайд 16">
+            <img src="static/portfolio/illustration/17.webp" width="1920" height="1825" loading="lazy" decoding="async" alt="Иллюстрация, слайд 17">
+            <img src="static/portfolio/illustration/18.webp" width="1920" height="1332" loading="lazy" decoding="async" alt="Иллюстрация, слайд 18">
+            <img src="static/portfolio/illustration/19.webp" width="1920" height="1000" loading="lazy" decoding="async" alt="Иллюстрация, слайд 19">
         </section>
     </main>
-    <script src="script.js"></script>
+    <script src="static/js/script.js"></script>
 </body>
 </html>
